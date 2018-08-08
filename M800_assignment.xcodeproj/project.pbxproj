@@ -14,6 +14,13 @@
 		3C9326BE211AAABD00CF1CD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C9326BC211AAABD00CF1CD7 /* LaunchScreen.storyboard */; };
 		3C9326C9211AAABD00CF1CD7 /* M800_assignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9326C8211AAABD00CF1CD7 /* M800_assignmentTests.swift */; };
 		3C9326D4211AAB2200CF1CD7 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3C9326D3211AAB2200CF1CD7 /* Podfile */; };
+		3C9326E3211AAEA800CF1CD7 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9326E2211AAEA800CF1CD7 /* HttpRequest.swift */; };
+		3C9326E5211AAF7300CF1CD7 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9326E4211AAF7300CF1CD7 /* Reachability.swift */; };
+		3C9326E7211AAFFC00CF1CD7 /* ResponseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9326E6211AAFFC00CF1CD7 /* ResponseResult.swift */; };
+		3C9326E9211AB08600CF1CD7 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9326E8211AB08600CF1CD7 /* Track.swift */; };
+		3C9326EB211AB33700CF1CD7 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9326EA211AB33700CF1CD7 /* AppConfig.swift */; };
+		3C9326EE211AB51F00CF1CD7 /* iTuneApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9326ED211AB51F00CF1CD7 /* iTuneApiManager.swift */; };
+		3C9326F0211AB62C00CF1CD7 /* iTuneHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9326EF211AB62C00CF1CD7 /* iTuneHelper.swift */; };
 		96A4F2A24E56E7AA3B5A8E96 /* Pods_M800_assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E9A84025D44B07DD049026 /* Pods_M800_assignment.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +46,13 @@
 		3C9326C8211AAABD00CF1CD7 /* M800_assignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M800_assignmentTests.swift; sourceTree = "<group>"; };
 		3C9326CA211AAABD00CF1CD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C9326D3211AAB2200CF1CD7 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		3C9326E2211AAEA800CF1CD7 /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
+		3C9326E4211AAF7300CF1CD7 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		3C9326E6211AAFFC00CF1CD7 /* ResponseResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseResult.swift; sourceTree = "<group>"; };
+		3C9326E8211AB08600CF1CD7 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		3C9326EA211AB33700CF1CD7 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		3C9326ED211AB51F00CF1CD7 /* iTuneApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTuneApiManager.swift; sourceTree = "<group>"; };
+		3C9326EF211AB62C00CF1CD7 /* iTuneHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTuneHelper.swift; sourceTree = "<group>"; };
 		A7CB895393773599DC5B9080 /* Pods-M800_assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-M800_assignment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-M800_assignment/Pods-M800_assignment.debug.xcconfig"; sourceTree = "<group>"; };
 		C2E9A84025D44B07DD049026 /* Pods_M800_assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_M800_assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8301ACABC705853074511A1 /* Pods-M800_assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-M800_assignment.release.xcconfig"; path = "Pods/Target Support Files/Pods-M800_assignment/Pods-M800_assignment.release.xcconfig"; sourceTree = "<group>"; };
@@ -105,6 +119,7 @@
 				3C9326D8211AAC0A00CF1CD7 /* Extensions */,
 				3C9326D7211AAC0400CF1CD7 /* Helpers */,
 				3C9326D5211AABF200CF1CD7 /* Configs */,
+				3C9326E1211AAE5500CF1CD7 /* Networking */,
 				3C9326B5211AAABD00CF1CD7 /* ViewController.swift */,
 			);
 			path = M800_assignment;
@@ -123,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				3C9326B3211AAABD00CF1CD7 /* AppDelegate.swift */,
+				3C9326EA211AB33700CF1CD7 /* AppConfig.swift */,
 			);
 			path = Configs;
 			sourceTree = "<group>";
@@ -130,6 +146,7 @@
 		3C9326D7211AAC0400CF1CD7 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				3C9326EF211AB62C00CF1CD7 /* iTuneHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -152,6 +169,7 @@
 		3C9326DA211AAC1700CF1CD7 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				3C9326E4211AAF7300CF1CD7 /* Reachability.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -159,6 +177,8 @@
 		3C9326DB211AAC2300CF1CD7 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				3C9326EC211AB4EE00CF1CD7 /* Managers */,
+				3C9326E0211AAE2300CF1CD7 /* Models */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -185,6 +205,31 @@
 				3C9326BA211AAABD00CF1CD7 /* Assets.xcassets */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		3C9326E0211AAE2300CF1CD7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3C9326E6211AAFFC00CF1CD7 /* ResponseResult.swift */,
+				3C9326E8211AB08600CF1CD7 /* Track.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3C9326E1211AAE5500CF1CD7 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				3C9326E2211AAEA800CF1CD7 /* HttpRequest.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		3C9326EC211AB4EE00CF1CD7 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				3C9326ED211AB51F00CF1CD7 /* iTuneApiManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		B9F68EA3BD9807842AC1310E /* Frameworks */ = {
@@ -350,6 +395,13 @@
 			files = (
 				3C9326B6211AAABD00CF1CD7 /* ViewController.swift in Sources */,
 				3C9326B4211AAABD00CF1CD7 /* AppDelegate.swift in Sources */,
+				3C9326F0211AB62C00CF1CD7 /* iTuneHelper.swift in Sources */,
+				3C9326EE211AB51F00CF1CD7 /* iTuneApiManager.swift in Sources */,
+				3C9326E5211AAF7300CF1CD7 /* Reachability.swift in Sources */,
+				3C9326EB211AB33700CF1CD7 /* AppConfig.swift in Sources */,
+				3C9326E7211AAFFC00CF1CD7 /* ResponseResult.swift in Sources */,
+				3C9326E3211AAEA800CF1CD7 /* HttpRequest.swift in Sources */,
+				3C9326E9211AB08600CF1CD7 /* Track.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
