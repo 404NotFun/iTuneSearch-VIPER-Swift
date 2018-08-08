@@ -52,7 +52,7 @@ extension HttpRequest {
     
     func getArray<T: Mappable>(domain: ApiDomain, url: String, parameters: Parameters?, ofType: T.Type, completion: @escaping(ResponseResult<T>)->(), failure: @escaping(String?)->()) {
         connectedNetworking {
-            Alamofire.request(domain.rawValue+url, method: .get, parameters: parameters, encoding: JSONEncoding.default, headers: AppConfig.defaultHeader).responseObject(completionHandler: { (response: DataResponse<ResponseResult<T>>) in
+            Alamofire.request(domain.rawValue+url, method: .get, parameters: parameters, headers: AppConfig.defaultHeader).responseObject(completionHandler: { (response: DataResponse<ResponseResult<T>>) in
                 if let responseJSON = response.result.value {
                     completion(responseJSON)
                 }else {

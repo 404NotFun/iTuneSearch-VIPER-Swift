@@ -9,14 +9,29 @@
 import UIKit
 
 enum ApiDomain: String {
-    case iTuneSearch = "https://itunes.apple.com/search?"
-    case iTuneLookUp = "https://itunes.apple.com/lookup?"
+    case iTuneSearch = "https://itunes.apple.com/search"
+    case iTuneLookUp = "https://itunes.apple.com/lookup"
 }
 
 struct AppConfig {
     static var defaultHeader: [String : String] = [
         "Content-Type": "application/json"
     ]
+    static func UnitFont(_ size: CGFloat) -> UIFont {
+        return UIFont(name: "Avenir-Light", size: size)!
+    }
+    
+    static func UnitBoldFont(_ size: CGFloat) -> UIFont {
+        return UIFont(name: "Avenir-Heavy", size: size)!
+    }
+    
+    static func setNavigationBarThemeDefault(_ nav: UINavigationController) {
+        //        self.navigationController?.navigationBar.topItem?.title = " "
+        nav.navigationBar.isTranslucent = true
+        nav.navigationBar.barTintColor = AppColor.themeBlue
+        nav.navigationBar.tintColor = .white
+        nav.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white, NSAttributedStringKey.font: UnitFont(18)]
+    }
 }
 
 struct AppColor {

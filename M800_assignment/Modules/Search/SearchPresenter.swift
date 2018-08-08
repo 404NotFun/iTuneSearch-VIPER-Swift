@@ -15,6 +15,12 @@ class SearchPresenter {
 }
 
 extension SearchPresenter: SearchV2P {
+    func searchKeyword(text: String?) {
+        if let text = text {
+            interactor.callSearchApi(text: text)
+        }
+    }
+    
     func push2TrackVC(id: String) {
         router.navigate2TrackVC(id: id)
     }
@@ -27,6 +33,12 @@ extension SearchPresenter: SearchI2P {
     }
     
     func searchApiResult(result: ResponseResult<Track>) {
-        view.searchFinished(result: result)
+        if let list = result.results {
+            view.searchFinished(result: list.flatMap({
+                return TrackCellViewModel.init(id: String($0.trackId ?? 0), title: $0.trackName ?? "???", subTitle: String($0.trackPrice ?? 0))
+            }))
+        }else {
+            view.searchFinished(result: [])
+        }
     }
 }

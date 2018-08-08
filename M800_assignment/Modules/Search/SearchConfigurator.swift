@@ -11,6 +11,7 @@ import Foundation
 // Input
 protocol SearchV2P {
     func push2TrackVC(id: String)
+    func searchKeyword(text: String?)
 }
 
 protocol SearchP2I {
@@ -25,7 +26,7 @@ protocol SearchI2P: class {
     func searchApiFailure(msg: String)
 }
 protocol SearchP2V: class {
-    func searchFinished(result: ResponseResult<Track>)
+    func searchFinished(result: [TrackCellViewModel])
     func searchFailure(msg: String)
 }
 

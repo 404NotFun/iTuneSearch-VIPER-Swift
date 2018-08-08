@@ -30,6 +30,11 @@
 		3C932701211ABA4D00CF1CD7 /* UINavigationContoller+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C932700211ABA4D00CF1CD7 /* UINavigationContoller+extension.swift */; };
 		3C932703211ABA6300CF1CD7 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C932702211ABA6300CF1CD7 /* Queue.swift */; };
 		3C932705211ABC5400CF1CD7 /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C932704211ABC5400CF1CD7 /* UIColor+extension.swift */; };
+		3CB8CC9A211B0D2100C20864 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB8CC99211B0D2100C20864 /* SearchViewModel.swift */; };
+		3CB8CC9C211B0D5400C20864 /* TrackCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB8CC9B211B0D5400C20864 /* TrackCellViewModel.swift */; };
+		3CB8CC9E211B11BC00C20864 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB8CC9D211B11BC00C20864 /* AlertHelper.swift */; };
+		3CB8CCA0211B1F4800C20864 /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB8CC9F211B1F4800C20864 /* String+extension.swift */; };
+		3CB8CCA2211B1FDE00C20864 /* SharedDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB8CCA1211B1FDE00C20864 /* SharedDataHelper.swift */; };
 		96A4F2A24E56E7AA3B5A8E96 /* Pods_M800_assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E9A84025D44B07DD049026 /* Pods_M800_assignment.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +76,11 @@
 		3C932700211ABA4D00CF1CD7 /* UINavigationContoller+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationContoller+extension.swift"; sourceTree = "<group>"; };
 		3C932702211ABA6300CF1CD7 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		3C932704211ABC5400CF1CD7 /* UIColor+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extension.swift"; sourceTree = "<group>"; };
+		3CB8CC99211B0D2100C20864 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		3CB8CC9B211B0D5400C20864 /* TrackCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCellViewModel.swift; sourceTree = "<group>"; };
+		3CB8CC9D211B11BC00C20864 /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
+		3CB8CC9F211B1F4800C20864 /* String+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
+		3CB8CCA1211B1FDE00C20864 /* SharedDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedDataHelper.swift; sourceTree = "<group>"; };
 		A7CB895393773599DC5B9080 /* Pods-M800_assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-M800_assignment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-M800_assignment/Pods-M800_assignment.debug.xcconfig"; sourceTree = "<group>"; };
 		C2E9A84025D44B07DD049026 /* Pods_M800_assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_M800_assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8301ACABC705853074511A1 /* Pods-M800_assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-M800_assignment.release.xcconfig"; path = "Pods/Target Support Files/Pods-M800_assignment/Pods-M800_assignment.release.xcconfig"; sourceTree = "<group>"; };
@@ -166,6 +176,8 @@
 			isa = PBXGroup;
 			children = (
 				3C9326EF211AB62C00CF1CD7 /* iTuneHelper.swift */,
+				3CB8CC9D211B11BC00C20864 /* AlertHelper.swift */,
+				3CB8CCA1211B1FDE00C20864 /* SharedDataHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -175,6 +187,7 @@
 			children = (
 				3C932700211ABA4D00CF1CD7 /* UINavigationContoller+extension.swift */,
 				3C932704211ABC5400CF1CD7 /* UIColor+extension.swift */,
+				3CB8CC9F211B1F4800C20864 /* String+extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -208,6 +221,7 @@
 		3C9326DC211AAC2900CF1CD7 /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
+				3CB8CC9B211B0D5400C20864 /* TrackCellViewModel.swift */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -271,6 +285,7 @@
 				3C9326F7211AB83500CF1CD7 /* SearchPresenter.swift */,
 				3C9326F9211AB84000CF1CD7 /* SearchInteractor.swift */,
 				3C9326FB211AB84800CF1CD7 /* SearchRouter.swift */,
+				3CB8CC99211B0D2100C20864 /* SearchViewModel.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -344,6 +359,11 @@
 					3C9326AF211AAABD00CF1CD7 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					3C9326C3211AAABD00CF1CD7 = {
 						CreatedOnToolsVersion = 9.2;
@@ -446,8 +466,10 @@
 			files = (
 				3C9326F4211AB81A00CF1CD7 /* SearchViewController.swift in Sources */,
 				3C9326B6211AAABD00CF1CD7 /* ViewController.swift in Sources */,
+				3CB8CCA2211B1FDE00C20864 /* SharedDataHelper.swift in Sources */,
 				3C9326F8211AB83500CF1CD7 /* SearchPresenter.swift in Sources */,
 				3C932705211ABC5400CF1CD7 /* UIColor+extension.swift in Sources */,
+				3CB8CC9A211B0D2100C20864 /* SearchViewModel.swift in Sources */,
 				3C9326FA211AB84000CF1CD7 /* SearchInteractor.swift in Sources */,
 				3C9326FF211AB9ED00CF1CD7 /* TrackViewController.swift in Sources */,
 				3C9326B4211AAABD00CF1CD7 /* AppDelegate.swift in Sources */,
@@ -459,7 +481,10 @@
 				3C9326E7211AAFFC00CF1CD7 /* ResponseResult.swift in Sources */,
 				3C9326FC211AB84800CF1CD7 /* SearchRouter.swift in Sources */,
 				3C9326E3211AAEA800CF1CD7 /* HttpRequest.swift in Sources */,
+				3CB8CCA0211B1F4800C20864 /* String+extension.swift in Sources */,
+				3CB8CC9C211B0D5400C20864 /* TrackCellViewModel.swift in Sources */,
 				3C932703211ABA6300CF1CD7 /* Queue.swift in Sources */,
+				3CB8CC9E211B11BC00C20864 /* AlertHelper.swift in Sources */,
 				3C9326E9211AB08600CF1CD7 /* Track.swift in Sources */,
 				3C9326F6211AB82500CF1CD7 /* SearchConfigurator.swift in Sources */,
 			);

@@ -19,7 +19,7 @@ extension SearchInteractor: SearchP2I {
         apiManager.search(term: text, limit: 10, country: "TW", completion: { resp in
             self.output.searchApiResult(result: resp)
         }, failure: { msg in
-            
+            self.output.searchApiFailure(msg: msg ?? "系統異常")
         })
     }
 }

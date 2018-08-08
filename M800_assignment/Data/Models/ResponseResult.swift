@@ -13,7 +13,7 @@ struct ResponseResult<Y: Mappable>: Mappable {
     typealias T = [Y]?
     
     var resultCount: Int!
-    var results: [T]?
+    var results: T
     
     init() {
         

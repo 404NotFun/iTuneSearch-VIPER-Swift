@@ -20,6 +20,7 @@ extension SearchRouter: SearchP2R {
     func navigate2TrackVC(id: String) {
         let module = TrackViewController()
         if let nav = vc?.navigationController {
+            SharedDataHelper.set(key: "TrackId", value: id)
             nav.asyncPush(module, animated: true)
         }
     }
