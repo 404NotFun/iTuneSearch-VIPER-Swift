@@ -9,11 +9,7 @@
 import Foundation
 
 struct iTuneApiManager: HttpRequest {
-    func search(term: String, limit: Int, country: String) {
-        getArray(domain: .iTuneSearch, url: "", parameters: iTuneHelper.shared.generateParameters(term: term, limit: limit, country: country), ofType: Track.self, completion: { resp in
-            
-        }, failure: { err in
-            
-        })
+    func search(term: String, limit: Int, country: String, completion: @escaping(ResponseResult<Track>)->(), failure: @escaping(String?)->()) {
+        getArray(domain: .iTuneSearch, url: "", parameters: iTuneHelper.shared.generateParameters(term: term, limit: limit, country: country), ofType: Track.self, completion: completion, failure: failure)
     }
 }

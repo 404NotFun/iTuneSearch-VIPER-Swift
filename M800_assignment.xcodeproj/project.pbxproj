@@ -21,6 +21,15 @@
 		3C9326EB211AB33700CF1CD7 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9326EA211AB33700CF1CD7 /* AppConfig.swift */; };
 		3C9326EE211AB51F00CF1CD7 /* iTuneApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9326ED211AB51F00CF1CD7 /* iTuneApiManager.swift */; };
 		3C9326F0211AB62C00CF1CD7 /* iTuneHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9326EF211AB62C00CF1CD7 /* iTuneHelper.swift */; };
+		3C9326F4211AB81A00CF1CD7 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9326F3211AB81A00CF1CD7 /* SearchViewController.swift */; };
+		3C9326F6211AB82500CF1CD7 /* SearchConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9326F5211AB82500CF1CD7 /* SearchConfigurator.swift */; };
+		3C9326F8211AB83500CF1CD7 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9326F7211AB83500CF1CD7 /* SearchPresenter.swift */; };
+		3C9326FA211AB84000CF1CD7 /* SearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9326F9211AB84000CF1CD7 /* SearchInteractor.swift */; };
+		3C9326FC211AB84800CF1CD7 /* SearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9326FB211AB84800CF1CD7 /* SearchRouter.swift */; };
+		3C9326FF211AB9ED00CF1CD7 /* TrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9326FE211AB9ED00CF1CD7 /* TrackViewController.swift */; };
+		3C932701211ABA4D00CF1CD7 /* UINavigationContoller+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C932700211ABA4D00CF1CD7 /* UINavigationContoller+extension.swift */; };
+		3C932703211ABA6300CF1CD7 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C932702211ABA6300CF1CD7 /* Queue.swift */; };
+		3C932705211ABC5400CF1CD7 /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C932704211ABC5400CF1CD7 /* UIColor+extension.swift */; };
 		96A4F2A24E56E7AA3B5A8E96 /* Pods_M800_assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E9A84025D44B07DD049026 /* Pods_M800_assignment.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +62,15 @@
 		3C9326EA211AB33700CF1CD7 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		3C9326ED211AB51F00CF1CD7 /* iTuneApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTuneApiManager.swift; sourceTree = "<group>"; };
 		3C9326EF211AB62C00CF1CD7 /* iTuneHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTuneHelper.swift; sourceTree = "<group>"; };
+		3C9326F3211AB81A00CF1CD7 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		3C9326F5211AB82500CF1CD7 /* SearchConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchConfigurator.swift; sourceTree = "<group>"; };
+		3C9326F7211AB83500CF1CD7 /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		3C9326F9211AB84000CF1CD7 /* SearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractor.swift; sourceTree = "<group>"; };
+		3C9326FB211AB84800CF1CD7 /* SearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRouter.swift; sourceTree = "<group>"; };
+		3C9326FE211AB9ED00CF1CD7 /* TrackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackViewController.swift; sourceTree = "<group>"; };
+		3C932700211ABA4D00CF1CD7 /* UINavigationContoller+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationContoller+extension.swift"; sourceTree = "<group>"; };
+		3C932702211ABA6300CF1CD7 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		3C932704211ABC5400CF1CD7 /* UIColor+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extension.swift"; sourceTree = "<group>"; };
 		A7CB895393773599DC5B9080 /* Pods-M800_assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-M800_assignment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-M800_assignment/Pods-M800_assignment.debug.xcconfig"; sourceTree = "<group>"; };
 		C2E9A84025D44B07DD049026 /* Pods_M800_assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_M800_assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8301ACABC705853074511A1 /* Pods-M800_assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-M800_assignment.release.xcconfig"; path = "Pods/Target Support Files/Pods-M800_assignment/Pods-M800_assignment.release.xcconfig"; sourceTree = "<group>"; };
@@ -110,6 +128,7 @@
 		3C9326B2211AAABD00CF1CD7 /* M800_assignment */ = {
 			isa = PBXGroup;
 			children = (
+				3C9326F1211AB7F700CF1CD7 /* Modules */,
 				3C9326DE211AAC3700CF1CD7 /* Assets */,
 				3C9326DD211AAC3000CF1CD7 /* Storyboards */,
 				3C9326DC211AAC2900CF1CD7 /* Widgets */,
@@ -154,6 +173,8 @@
 		3C9326D8211AAC0A00CF1CD7 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				3C932700211ABA4D00CF1CD7 /* UINavigationContoller+extension.swift */,
+				3C932704211ABC5400CF1CD7 /* UIColor+extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -170,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				3C9326E4211AAF7300CF1CD7 /* Reachability.swift */,
+				3C932702211ABA6300CF1CD7 /* Queue.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -230,6 +252,35 @@
 				3C9326ED211AB51F00CF1CD7 /* iTuneApiManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		3C9326F1211AB7F700CF1CD7 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3C9326FD211AB9E000CF1CD7 /* Track */,
+				3C9326F2211AB80800CF1CD7 /* Search */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		3C9326F2211AB80800CF1CD7 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				3C9326F5211AB82500CF1CD7 /* SearchConfigurator.swift */,
+				3C9326F3211AB81A00CF1CD7 /* SearchViewController.swift */,
+				3C9326F7211AB83500CF1CD7 /* SearchPresenter.swift */,
+				3C9326F9211AB84000CF1CD7 /* SearchInteractor.swift */,
+				3C9326FB211AB84800CF1CD7 /* SearchRouter.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		3C9326FD211AB9E000CF1CD7 /* Track */ = {
+			isa = PBXGroup;
+			children = (
+				3C9326FE211AB9ED00CF1CD7 /* TrackViewController.swift */,
+			);
+			path = Track;
 			sourceTree = "<group>";
 		};
 		B9F68EA3BD9807842AC1310E /* Frameworks */ = {
@@ -393,15 +444,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C9326F4211AB81A00CF1CD7 /* SearchViewController.swift in Sources */,
 				3C9326B6211AAABD00CF1CD7 /* ViewController.swift in Sources */,
+				3C9326F8211AB83500CF1CD7 /* SearchPresenter.swift in Sources */,
+				3C932705211ABC5400CF1CD7 /* UIColor+extension.swift in Sources */,
+				3C9326FA211AB84000CF1CD7 /* SearchInteractor.swift in Sources */,
+				3C9326FF211AB9ED00CF1CD7 /* TrackViewController.swift in Sources */,
 				3C9326B4211AAABD00CF1CD7 /* AppDelegate.swift in Sources */,
+				3C932701211ABA4D00CF1CD7 /* UINavigationContoller+extension.swift in Sources */,
 				3C9326F0211AB62C00CF1CD7 /* iTuneHelper.swift in Sources */,
 				3C9326EE211AB51F00CF1CD7 /* iTuneApiManager.swift in Sources */,
 				3C9326E5211AAF7300CF1CD7 /* Reachability.swift in Sources */,
 				3C9326EB211AB33700CF1CD7 /* AppConfig.swift in Sources */,
 				3C9326E7211AAFFC00CF1CD7 /* ResponseResult.swift in Sources */,
+				3C9326FC211AB84800CF1CD7 /* SearchRouter.swift in Sources */,
 				3C9326E3211AAEA800CF1CD7 /* HttpRequest.swift in Sources */,
+				3C932703211ABA6300CF1CD7 /* Queue.swift in Sources */,
 				3C9326E9211AB08600CF1CD7 /* Track.swift in Sources */,
+				3C9326F6211AB82500CF1CD7 /* SearchConfigurator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
